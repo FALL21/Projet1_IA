@@ -1,0 +1,80 @@
+
+### Installation
+
+#### Prérequis
+
+- Python 3.12 ou supérieur
+- Pip
+
+#### Étapes d'installation
+
+1. **Clonez le projet** :
+   ```bash
+   git clone https://github.com/FALL21/malware-detector.git
+   cd malware-detector
+   ```
+
+2. **Créez un environnement virtuel** :
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # macOS/Linux
+   venv\Scripts\activate   # Windows
+   ```
+
+3. **Installez les dépendances** :
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+### Utilisation
+
+1. **Lancez l’application Streamlit** :
+   ```bash
+   streamlit run app.py
+   ```
+
+2. **Utilisez l’interface** :
+   - Ouvrez l’URL dans votre navigateur (par défaut : `http://localhost:8501`).
+   - Téléversez un fichier exécutable.
+   - L’application indiquera s’il s’agit d’un malware ou d’un fichier légitime, avec les probabilités associées.
+
+---
+
+### Fichiers nécessaires
+
+Assurez-vous que les fichiers suivants sont présents dans le répertoire du projet :
+
+- `app.py` : Script principal de l’application.
+- `malware_detector.pkl` : Modèle pré-entraîné pour les prédictions.
+- `scaler.pkl` : Scaler utilisé pour normaliser les caractéristiques extraites.
+
+---
+
+### Exemple de résultat
+
+- **Fichier légitime :**
+  ```
+  Fichier légitime ✅
+  Probabilité de malware : 2.45%
+  ```
+
+- **Malware :**
+  ```
+  ⚠️ MALWARE DÉTECTÉ !
+  Probabilité de malware : 97.80%
+  ```
+
+---
+
+### Avertissements
+
+- Ce projet est fourni à des fins éducatives uniquement.
+- L’utilisation pour l’analyse de logiciels malveillants réels doit être effectuée avec précaution.
+
+---
+
+### Auteur
+
+- **Mame Bou Fall**
